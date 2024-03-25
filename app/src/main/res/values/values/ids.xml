@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main" type="id" />
+    <item name="headerTextView" type="id" />
+    <item name="textView_announce_count" type="id" />
+</resources>

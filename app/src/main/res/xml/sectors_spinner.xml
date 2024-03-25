@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spinner>
+    <Option value="Information Technology">Information Technology</Option>
+    <Option value="Finance">Finance</Option>
+    <Option value="Healthcare">Healthcare</Option>
+    <Option value="Education">Education</Option>
+    <Option value="Marketing">Marketing</Option>
+</Spinner>

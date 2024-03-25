@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:ignore="DiscouragedApi">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/register11"
+        android:gravity="center|right"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:ignore="RtlHardcoded">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            tools:ignore="ExtraText">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="334dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    android:id="@+id/loginText"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="6dp"
+                    android:text="JOBHUNT"
+                    android:textAlignment="center"
+                    android:textColor="@color/purple"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:visibility="visible" />
+
+                <RadioGroup
+
+                    android:id="@+id/userTypeRadioGroup"
+                    android:layout_width="319dp"
+                    android:layout_height="56dp"
+                    android:layout_below="@id/headerTextView"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/whitecadre"
+                    android:drawableLeft="@drawable/stum_editext">
+
+                    <RadioButton
+                        android:id="@+id/recruteurRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:text="RECRUTEUR"
+                        android:textSize="12sp" />
+
+                    <RadioButton
+                        android:id="@+id/candidatRadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CANDIDAT"
+                        android:textSize="12sp" />
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/spinner_cities"
+                    android:xml="@xml/array_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                         android:entries="@drawable/array_spinner"/>
+
+
+                <EditText
+                    android:id="@+id/Username"
+                    android:layout_width="326dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/stum_editext"
+                    android:drawableLeft="@drawable/stum_editext"
+                    android:drawablePadding="16dp"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="326dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/stum_editext"
+                    android:drawableLeft="@drawable/stum_editext"
+                    android:drawablePadding="8dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/purple"
+                    android:text="Next "
+                    android:textSize="18sp"
+                    app:cornerRadius="20dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/signupText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Have an account already ?! LOGIN"
+            android:textAlignment="center"
+            android:textColor="@color/purple"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+    </RelativeLayout>

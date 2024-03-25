@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spinner>
+    <Option value="Software Engineer">Software Engineer</Option>
+    <Option value="Data Analyst">Data Analyst</Option>
+    <Option value="Sales Manager">Sales Manager</Option>
+    <Option value="Marketing Coordinator">Marketing Coordinator</Option>
+</Spinner>

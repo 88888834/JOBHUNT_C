@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spinner>
+    <Option value="Full-time">Full-time</Option>
+    <Option value="Part-time">Part-time</Option>
+    <Option value="Freelance">Freelance</Option>
+    <Option value="Contract">Contract</Option>
+    <Option value="Temporary">Temporary</Option>
+</Spinner>

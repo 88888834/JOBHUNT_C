@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login11"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/stum_editext"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        tools:ignore="ExtraText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="6dp"
+                android:text="jobhunt"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/stum_editext"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="14dp"
+                android:hint="username"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:importantForAutofill="no"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/stum_editext"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="16dp"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:importantForAutofill="no" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-15dp"
+                android:paddingTop="3dp"
+                android:text="remember_me" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple"
+                android:text="login"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:text="  not_yet_registered_signup_now"
+        android:textAlignment="center"
+        android:textColor="#AB47BC"
+        android:textSize="14sp" />
+
+
+</LinearLayout>
+</RelativeLayout>

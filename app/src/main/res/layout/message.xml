@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messsage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait">
+<LinearLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aa"
+    android:gravity="center|right"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <strings android:name="message_template"
+        tools:ignore="ExtraText">Il y a %1$d annonces dans la ville de%2$s.</strings>  </LinearLayout>    </RelativeLayout>
